@@ -1,14 +1,20 @@
-import com.sun.source.tree.Tree;
-
+/**
+ * A simple binary tree with String values.
+ */
 public class TreeNode {
     private String contents;
     private TreeNode left;
     private TreeNode right;
 
+    /**
+     * Performs a deep comparison with another TreeNode.
+     */
     public boolean deepCompare(TreeNode tn2) {
-       // TODO
-        return false;
+
+        return false; // TODO: Implement
     }
+
+    // -----------------------------------------------------------------------
 
     public TreeNode(String contents) {
         this.contents = contents;

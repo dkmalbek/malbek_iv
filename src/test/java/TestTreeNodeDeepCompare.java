@@ -6,16 +6,15 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 public class TestTreeNodeDeepCompare {
 
     @Test
-    public void testEquals() {
+    // Verify that two identical trees are equal
+    public void testDeepCompare() {
         assertTrue(testTree1().deepCompare(testTree1()));
-    }
-
-    @Test
-    public void testNotEquals() {
         assertFalse(testTree1().deepCompare(testTree2()));
     }
 
-    // Todo additional tests?
+    // TODO: What additional tests would be helpful
+
+    // Utility methods to create TreeNode trees
 
     private static TreeNode testTree1() {
         return new TreeNode(
