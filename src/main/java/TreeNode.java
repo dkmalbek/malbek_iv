@@ -12,7 +12,7 @@ public class TreeNode {
      * Performs a deep comparison with another TreeNode.
      */
     public boolean deepCompare(TreeNode tn2) {
-        // TODO: Implement
+        return false;  // TODO: Implement
     }
 
     // -----------------------------------------------------------------------
