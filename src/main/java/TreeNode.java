@@ -13,8 +13,7 @@ public class TreeNode {
      * Performs a deep comparison with another TreeNode.
      */
     public boolean deepEquals(TreeNode tn2) {
-        return (tn2 != null) &&
-                this.equals(tn2) &&
+        return this.equals(tn2) &&
                 (((this.left == null) && (tn2.left == null)) ||
                         (((this.left != null)) && this.left.deepEquals(tn2.left))) &&
                 (((this.right == null) && (tn2.right == null)) ||

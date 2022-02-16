@@ -3,7 +3,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-public class TestTreeNodeDeepCompare {
+public class TestTreeNode {
 
     @Test
     // Verify that two identical trees are equal
