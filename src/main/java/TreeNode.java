@@ -12,13 +12,13 @@ public class TreeNode {
     /**
      * Performs a deep comparison with another TreeNode.
      */
-    public boolean deepCompare(TreeNode tn2) {
+    public boolean deepEquals(TreeNode tn2) {
         return (tn2 != null) &&
-                this.contents.equals(tn2.contents) &&
+                this.equals(tn2) &&
                 (((this.left == null) && (tn2.left == null)) ||
-                        (((this.left != null)) && this.left.deepCompare(tn2.left))) &&
+                        (((this.left != null)) && this.left.deepEquals(tn2.left))) &&
                 (((this.right == null) && (tn2.right == null)) ||
-                        (((this.right != null)) && this.right.deepCompare(tn2.right)));
+                        (((this.right != null)) && this.right.deepEquals(tn2.right)));
     }
 
     // -----------------------------------------------------------------------
