@@ -32,6 +32,7 @@ public class TreeNode {
 
     @Override
     public int hashCode() {
+        // Bonus question: Can this be improved?
         return Objects.hash(value);
     }
 
