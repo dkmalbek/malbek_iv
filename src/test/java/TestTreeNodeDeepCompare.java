@@ -7,9 +7,9 @@ public class TestTreeNodeDeepCompare {
 
     @Test
     // Verify that two identical trees are equal
-    public void testDeepCompare() {
-        assertTrue(testTree1().deepCompare(testTree1()));
-        assertFalse(testTree1().deepCompare(testTree2()));
+    public void testDeepEquals() {
+        assertTrue(testTree1().deepEquals(testTree1()));
+        assertFalse(testTree1().deepEquals(testTree2()));
     }
 
     // TODO: What additional tests would be helpful
